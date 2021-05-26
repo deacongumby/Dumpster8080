@@ -7,20 +7,8 @@ $global:countTotal = 0
 $ErrorActionPreference = "Stop"
 
 $arrayDomain = @()
-$arrayDomain += "dc=corp,dc=microsoft,dc=com"
-$arrayDomain += "dc=africa,dc=corp,dc=microsoft,dc=com"
-$arrayDomain += "dc=europe,dc=corp,dc=microsoft,dc=com"
-$arrayDomain += "dc=fareast,dc=corp,dc=microsoft,dc=com"
-$arrayDomain += "dc=middleeast,dc=corp,dc=microsoft,dc=com"
-$arrayDomain += "dc=northamerica,dc=corp,dc=microsoft,dc=com"
-$arrayDomain += "dc=redmond,dc=corp,dc=microsoft,dc=com"
-$arrayDomain += "dc=southamerica,dc=corp,dc=microsoft,dc=com"
-$arrayDomain += "dc=southpacific,dc=corp,dc=microsoft,dc=com"
-$arrayDomain += "dc=mslpa,dc=corp,dc=microsoft,dc=com"
-$arrayDomain += "dc=windeploy,dc=ntdev,dc=microsoft,dc=com"
-$arrayDomain += "dc=wingroup,dc=windeploy,dc=ntdev,dc=microsoft,dc=com"
-$arrayDomain += "dc=xcorp,dc=microsoft,dc=com"
-$arrayDomain += "dc=xred,dc=xcorp,dc=microsoft,dc=com"
+$arrayDomain += "dc=bacon,dc=local"
+$arrayDomain += "dc=porkchop,dc=bacon,dc=local"
 #>
 
 $ErrorActionPreference = "Continue"
