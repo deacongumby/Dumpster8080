@@ -1,7 +1,7 @@
-$strComputer = "tk5-ext-dc-03.extranet.microsoft.com"
+$strComputer = "tk5-ext-dc-03.bacon.local"
 
-$computerSystem = Get-WmiObject Win32_ComputerSystem ñcomp $strComputer
-$operatingSystem = Get-WmiObject Win32_OperatingSystem ñcomp $strComputer
+$computerSystem = Get-WmiObject Win32_ComputerSystem ‚Äìcomp $strComputer
+$operatingSystem = Get-WmiObject Win32_OperatingSystem ‚Äìcomp $strComputer
 $IPconfigset = Get-WmiObject Win32_NetworkAdapterConfiguration -comp $strComputer
 $reg = [Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey('LocalMachine', $strComputer)         
 $regNetlogon = "SYSTEM\\currentcontrolset\\services\\Netlogon\\parameters"          
@@ -59,9 +59,9 @@ function Check_Port($portname,$port,$timeout)
     $tcpclient.Close()
   }
   if($failed) {
-    write-host ìFailedî
+    write-host ‚ÄúFailed‚Äù
   } else {
-    write-host ìSuccessfulî    
+    write-host ‚ÄúSuccessful‚Äù    
   }
 }
 
