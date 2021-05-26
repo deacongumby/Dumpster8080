@@ -96,46 +96,8 @@ function get-ModelInfo($strDomain) {
 
 
 
+getDCs "bacon.local"
 
-
-
-
-
-$domainXCORP = "DC=xcorp,DC=microsoft,DC=com"
-$domainCORP = "DC=corp,DC=microsoft,DC=com"
-$domainEXT = "DC=extranet,DC=microsoft,DC=com"
-$domainET = "DC=extranettest,DC=microsoft,DC=com"
-
-
-switch ($domains) {
-
-  corp         { getDCs "corp.microsoft.com" $domainCORP }        
-  africa       { getDCs "africa.corp.microsoft.com" $domainCORP }        
-  europe       { getDCs "europe.corp.microsoft.com" $domainCORP }
-  fareast      { getDCs "fareast.corp.microsoft.com" $domainCORP }
-  middleeast   { getDCs "middleeast.corp.microsoft.com" $domainCORP }
-  northamerica { getDCs "northamerica.corp.microsoft.com" $domainCORP }
-  redmond      { getDCs "redmond.corp.microsoft.com" $domainCORP }
-  southamerica { getDCs "southamerica.corp.microsoft.com" $domainCORP }
-  southpacific { getDCs "southpacific.corp.microsoft.com" $domainCORP }
-  exchange     { getDCs "exchange.corp.microsoft.com" $domainCORP }
-  mslpa        { getDCs "mslpa.corp.microsoft.com" $domainCORP }
-  wgia         { getDCs "wgia.corp.microsoft.com" $domainCORP }
-  windeploy    { getDCs "windeploy.ntdev.microsoft.com" $domainCORP }
-  wingroup     { getDCs "wingroup.windeploy.ntdev.microsoft.com" $domainCORP }
-  winse        { getDCs "winse.corp.microsoft.com" $domainCORP }
-  segroup      { getDCs "segroup.winse.corp.microsoft.com" $domainCORP }          
-  xcorp        { getDCs "xcorp.microsoft.com" $domainXCORP }
-  xred         { getDCs "xred.xcorp.microsoft.com" $domainXCORP }
-  
-  extranet     { getDCs "extranet.microsoft.com" $domainEXT }
-  partners     { getDCs "partners.extranet.microsoft.com" $domainEXT }
-  extranettest { getDCs "extranettest.microsoft.com" $domainET }
-  parttest     { getDCs "parttest.extranettest.microsoft.com" $domainET }
-  
-  ntdev         { getDCs "ntdev.corp.microsoft.com" }
-  iMSNBC        { getDCs "interactive.msnbc.com" }
-}
 
 Start-Sleep 5
 copy-item $htmlfile $weblocation
