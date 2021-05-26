@@ -152,28 +152,7 @@ function getDCs($domain) {
 }
 
 
-getDCs "corp.microsoft.com"      
-getDCs "africa.corp.microsoft.com"      
-getDCs "europe.corp.microsoft.com"
-getDCs "fareast.corp.microsoft.com"
-getDCs "middleeast.corp.microsoft.com"
-getDCs "northamerica.corp.microsoft.com"
-getDCs "redmond.corp.microsoft.com"
-getDCs "southamerica.corp.microsoft.com"
-getDCs "southpacific.corp.microsoft.com"
-getDCs "exchange.corp.microsoft.com"
-getDCs "mslpa.corp.microsoft.com"
-getDCs "wgia.corp.microsoft.com"
-getDCs "windeploy.ntdev.microsoft.com"
-getDCs "wingroup.windeploy.ntdev.microsoft.com"
-getDCs "winse.corp.microsoft.com"
-getDCs "segroup.winse.corp.microsoft.com"         
-getDCs "xcorp.microsoft.com"
-getDCs "xred.xcorp.microsoft.com"
-getDCs "extranet.microsoft.com"
-getDCs "partners.extranet.microsoft.com"
-getDCs "extranettest.microsoft.com"
-getDCs "parttest.extranettest.microsoft.com"
+getDCs "bacon.local"      
 
 
 Add-Content $htmlfile ("<HTML><TITLE> General Domain Summary</TITLE>")
